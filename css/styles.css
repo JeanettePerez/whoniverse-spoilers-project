@@ -1,0 +1,42 @@
+
+/* font for logo */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+/* style that over rides everything */
+
+body {
+    margin: 0;
+}
+
+.logo {
+    padding: 0;
+    margin-left: 1em;
+    color: antiquewhite;
+    display: inline-block;
+    cursor: pointer;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: black;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+
+}
+
+
+
+
+.nav-items {
+    display: inline-block;
+    padding: 0 20px;
+    color: antiquewhite;
+
+}
