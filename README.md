@@ -1,4 +1,4 @@
-#Hello Sweeties,
+# Hello Sweeties,
 
 This project was created to practice newly learned languages by celebrating the whimsical world of the doctor.
 
@@ -6,7 +6,7 @@ This project was created to practice newly learned languages by celebrating the 
 * Looking to grow my skills in Web Development 
 
 
-##Currently learning
+## Currently learning
 * HTML
 * CSS
 * Javascript
