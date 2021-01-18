@@ -1,0 +1,132 @@
+/*learning about media queries and how to build them */
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+html {
+    font-family: 'Julius Sans One', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #05050E;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 1em auto;
+    width: 90%;
+    max-width: 1000px;
+}
+/* for the form
+
+ */
+
+.form-box {
+    padding: .5em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* for the smaller screens i want to hide the labels */
+.form-box label {
+    display: none;
+}
+
+
+.form-box-check {
+    padding: 0;
+    font-size: 10px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+}
+
+#btn {
+    display: flex;
+    color: white;
+    background-color: #05050E;
+    justify-content: center;
+}
+
+/*
+#btn{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: #05050E;
+    border-radius: 1em;
+    width: 90%;
+}
+
+ */
+
+/* adding the media queries */
+
+@media all and (min-width: 500px) {
+    .form-box{
+
+    }
+    .form-box label { /* this will show the labels on screens that are bigger than mobile */
+        display: block;
+    }
+
+    .form-box-check{
+        text-align: center;
+    }
+
+    #btn{
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media all and (min-width: 600px) {
+    .form-box {
+        flex-direction: row;
+        margin: 0;
+        padding: 1em;
+        justify-content: center;
+
+    }
+    .form-box label {
+        flex-basis: 9em; /* controlling the width */
+        flex-grow: 0;
+        flex-shrink: 0;
+        align-items: center;
+    }
+
+    .form-box input {
+        align-items: center;
+    }
+
+    input#confirm-password {
+        height: 34px;            /* the height of the text area */
+        align-self: center;      /* aligning the text area in the center of the confirm password */
+    }
+    .form-box-check{
+
+        text-align: center;
+    }
+
+    .form-box-check label{
+        text-align: center;
+
+        font-size: 2em;
+    }
+
+
+    #btn {
+        justify-content: center;
+        align-content: center;
+        width: 50%;
+    }
+}
+
+
