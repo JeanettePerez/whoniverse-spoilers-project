@@ -11,3 +11,6 @@ This project was created to practice newly learned languages by celebrating the 
 * CSS
 * Javascript
 
+### citing:
+making a responsive nav bar
+* https://www.youtube.com/watch?v=At4B7A4GOPg
