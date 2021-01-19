@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+/* target css on different browser versions */
+* {
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+
+nav{
+    display: flex; /* brings the logo and nav next to eachother */
+    justify-content: space-between; /* spaces the two items */
+    align-items: center; /* so the links line up perfectly to the larger sized logo */
+    background-color: rgba(12, 23, 41, 1);
+    color: antiquewhite;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.nav-list ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.nav-list li{
+    list-style-type: none;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: antiquewhite;
+    display: block;
+    padding: 1em;
+}
+
+.nav-list li:hover {
+    background-color: rgba(89, 97, 217, 1);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem; /* so it wont be all the wa at the top */
+    right: 1rem;
+    display:none; /* to not display on larger screens */
+    flex-direction: column; /* to display in columns for smaller screens */
+    justify-content: space-between; /* as much space between possible */
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .line {
+    height: 3px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 500px) {
+    .toggle-button {
+        display:flex;
+    }
+
+    .nav-list {
+        display: none;
+       width: 100%; /* to make the whole container span the block */
+    }
+
+    nav {
+        flex-direction: column; /* everything to be placed above each other */
+        align-items: flex-start; /* to get the logo on the left side and the nav underneath*/
+
+    }
+    .nav-list ul {
+        width: 100%; /* spans the width of the ul to 100% */
+        flex-direction: column; /* to be stacked above each other */
+
+    }
+    .nav-list li {
+        text-align: center;
+    }
+    .nav-list li a {
+        padding: .5rem 1rem; /* so they are not so far apart */
+    }
+
+    .nav-list.active { /* to determine if the list should be showing */
+        display: flex;
+    }
+}
