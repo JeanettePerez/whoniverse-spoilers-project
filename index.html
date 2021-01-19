@@ -4,39 +4,32 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Spoilers</title>
-		<link rel="stylesheet" href="css/styles.css">
+		<!-- <link rel="stylesheet" href="css/styles.css">  first style sheet not responsive -->
+		<link rel="stylesheet" href="css/mq-styles.css">
 	</head>
 	<body>
-
-		<header>
-			<nav>
-				<h3 class="logo">Doctor Who</h3>
-				<ul class="nav-list">
-					<li><a href="#" class="nav-items">Home</a></li>
-					<li><a href="#" class="nav-items">The Doctors</a>
-						<ul class="doctor-list">
-							<li><a href="#" class="doctor-items">1963-1989</a></li>
-							<li><a href="#" class="doctor-items">War Doctor</a> </li>
-							<li><a href="#" class="doctor-items">9th Doctor</a> </li>
-							<li><a href="#" class="doctor-items" >10th Doctor</a> </li>
-							<li><a href="#" class="doctor-items">11th Doctor</a> </li>
-							<li><a href="#" class="doctor-items">12th Doctor</a></li>
-							<li><a href="#" class="doctor-items">13th Doctor</a></li>
-						</ul>
+		<nav>
+			<div class="logo">Doctor Who</div>
+			<a href="#" class="toggle-button">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</a>
+			<div class="nav-list">
+				<ul>
+					<li>
+						<a href="#" class="nav-items">Home</a>
 					</li>
-					<li><a href="#" class="nav-items">Companions</a></li>
-					<li><a href="#" class="nav-items">Theories</a>
-						<ul class="theory-list">
-							<li><a href="#" class="theory-items">Oswin</a></li>
-							<li><a href="#" class="theory-items">Rose</a> </li>
-							<li><a href="#" class="theory-items">FanFiction</a></li>
-						</ul>
+					<li>
+						<a href="#" class="nav-items">About Us</a>
 					</li>
-					<li><a href="#" class="nav-items">About Us</a></li>
-					<li><a href="#" class="nav-items">Sign In</a></li>
+					<li>
+						<a href="#" class="nav-items">Sign In</a>
+					</li>
 				</ul>
-			</nav>
-		</header>
+			</div>
+		</nav>
 
+	<script src="js/mq-styles.js"></script>
 	</body>
 </html>
