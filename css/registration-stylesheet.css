@@ -5,7 +5,7 @@
 html {
     font-family: 'Julius Sans One', sans-serif;
     box-sizing: border-box;
-    font-size: 20px;
+    
     line-height: 1.6em;
     color: #05050E;
 }
@@ -21,7 +21,8 @@ main {
     width: 90%;
     max-width: 1000px;
 }
-/* for the form
+/*
+ for the form
 
  */
 
@@ -29,6 +30,8 @@ main {
     padding: .5em 2em;
     display: flex;
     flex-direction: column;
+
+
 }
 
 
@@ -45,6 +48,7 @@ main {
     font-weight: bolder;
     color: black;
     text-align: center;
+
 }
 
 #btn {
@@ -87,7 +91,7 @@ main {
 
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 500px) {
     .form-box {
         flex-direction: row;
         margin: 0;
@@ -111,13 +115,11 @@ main {
         align-self: center;      /* aligning the text area in the center of the confirm password */
     }
     .form-box-check{
-
         text-align: center;
     }
 
     .form-box-check label{
         text-align: center;
-
         font-size: 2em;
     }
 
